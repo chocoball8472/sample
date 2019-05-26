@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>簡単シューティング</title>
+    <style>
+      #wrapper {
+        width: 302px;
+        margin: 0 auto 0;
+      }
+
+      #canvas {
+        background-color: black;
+      }
+
+      button {
+        margin-top: 10px;
+      }
+
+      .explain {
+        margin-top: 50px;
+      }
+
+      li {
+        margin-left: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+     <canvas id="canvas" width="300px" height="400px"></canvas>
+     <div id="score"></div>
+     <div id="gamestatus">Start: Press Enter</div>
+     <button type="button" onclick="reset()">RESET</button>
+
+     <div class="explain">
+       <p>ルール説明<p>
+       <ul>
+         <li>Enterキーでスタート</li>
+         <li>テンキーで移動。</li>
+         <li>スペースキーで弾の発射。</li>
+         <li>敵を一つ落とすごとにスコアに5点プラス。</li>
+         <li>敵を撃ち漏らすごとに1点マイナス。</li>
+         <li>敵に衝突したらゲームオーバー。</li>
+       </ul>
+       <a href="/">ホーム</a><br>
+       <a href="../../html/games.html">自作ゲーム</a>
+     </div>
+
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>
