@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
   background-image: url(../img/bg013_03.gif);
 }
 
@@ -52,8 +53,11 @@ a:hover {
 
 .container {
   width: 1000px;
-  /*min-height: 800px;*/
+  min-height: 100vh;
   margin: 0 auto 0;
+  position: relative;
+  padding-bottom: 50px;
+  box-sizing: border-box;
   /*background-image: url(../img/bg082_02.gif);*/
   /*background-color: #eeeeee;*/
 }
@@ -94,6 +98,7 @@ a:hover {
 }
 
 .content h2 {
+  font-size: 22.5px;
   padding: 5px;
   background-image: url(../img/head016_05.png);
 }
@@ -137,8 +142,12 @@ a:hover {
 }
 
 .footer {
-  height: 30px;
+  /*height: 30px;*/
+  width: 100%;
   background-color: #FF9872;
   text-align: center;
   color: white;
+  padding: 5px 0;
+  position: absolute;
+  bottom: 0;
 }
